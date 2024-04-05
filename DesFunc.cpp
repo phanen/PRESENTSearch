@@ -2,7 +2,6 @@
 #include "GlobalV.h"
 #include "Tables.h"
 #include "Types.h"
-#include <stdio.h>
 u8 substitution(u8 x) { return S[x]; }
 
 void word64_2_word4(u8 *y, u64 x) {
@@ -14,10 +13,10 @@ void word64_2_word4(u8 *y, u64 x) {
 void word4_2_word64(u64 *y, u8 *x) {
   u64 temp = 0;
   for (int i = 0; i < 15; i++) {
-    temp += (*(x + i));
+    temp += *(x + i);
     temp <<= 4;
   }
-  temp += (*(x + 15));
+  temp += *(x + 15);
   *y = temp;
 }
 

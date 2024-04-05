@@ -1,6 +1,5 @@
 #pragma once
 #include "Types.h"
-// #include <fstream>
 
 u8 substitution(u8 x);
 void word64_2_word4(u8 *y, u64 x);

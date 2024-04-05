@@ -80,7 +80,7 @@ int main() {
   // start=clock();
   // search(13);
   // Round_1();
-  searchAll();
+  // searchAll();
   // make(4,-14);
   // searchByMaking(4);
 
@@ -94,5 +94,5 @@ int main() {
   searchPattern();*/
   end = clock();
   printf("ËÑË÷time=%f\n", (double)(end - start) / sysconf(_SC_CLK_TCK));
-  system("pause");
+  // system("pause");
 }
